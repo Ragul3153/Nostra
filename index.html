@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nostra</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Popup-->
+    <section id="main" class="bg-black flex items-center justify-center gap-20 hidden md:flex">
+      <div class="flex gap-2 text-white p-2">
+        <h1>Sign Up and</h1>
+        <h1 class="font-bold">GET 20% OFF</h1>
+        <h1>for your first order</h1>
+      </div>
+
+      <div>
+        <h1 id="popup" class="text-white cursor-pointer" >X</h1>
+      </div>
+    </section>
+
+    <!--Navigation Bar-->
+
+    <section class="flex justify-between bg-gray-300 p-5 items-center">
+      <div>
+        <h1 class="font-bold text-2xl">Nostra</h1>
+      </div>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        id="menuicon"
+        class="w-8 h-8 md:hidden"
+        onclick="open"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+        />
+      </svg>
+
+      <div class="flex gap-10 hidden md:flex">
+        <p class="cursor-pointer">Home</p>
+        <p class="cursor-pointer">New Arrival</p>
+        <p class="cursor-pointer">Most Wanted</p>
+        <p class="cursor-pointer">Collections</p>
+        <p class="cursor-pointer">Contact Us</p>
+      </div>
+    </section>
+
+    <!--Side Navbar-->
+
+    <section>
+      <div
+        id="sidenav"
+        class="bg-gray-200 fixed top-0 grid p-5 h-full transition-all duration-1000"
+        style="right: -50%"
+      >
+        <div class="text-right">
+          <p id="closenav">X</p>
+        </div>
+        <p>Home</p>
+        <p>New Arrival</p>
+        <p>Most Wanted</p>
+        <p>Collections</p>
+        <p>Contact Us</p>
+      </div>
+    </section>
+
+    <!--Slide Image Section-->
+
+    <section class="">
+      <div class="flex">
+        <img class="w-96 h-96" src="./Images/img1.jpg" alt="Fashion Image 1">
+        <img class="w-96 h-96" src="./Images/img2.jpg" alt="Fashion Image 2">
+        <img class="w-96 h-96" src="./Images/img3.jpg" alt="Fashion Image 3">
+        <img class="w-96 h-96" src="./Images/img4.jpg" alt="Fashion Image 4">
+      </div>
+
+      <div>
+        <h1>Level up your style with our</h1>
+        <p>Summer Collections</p>
+      </div>
+
+      <div>
+        <button>Shop Now</button>
+        arrow Image
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+    <script src="index.js"></script>
+  </body>
+</html>
