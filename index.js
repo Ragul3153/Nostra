@@ -29,19 +29,23 @@ totalSlides = sliderElement.childElementCount;
 console.log(totalSlides)
 
 function next(){
-    if(totalSlides < currentSlideID){
+    if(currentSlideID < totalSlides){
          currentSlideID++;
           showSlide()
     }
-       
+    else if(currentSlideID==totalSlides)
+        currentSlideID =1
+        showSlide()
 }
 
 function prev(){
     if(currentSlideID > 1){
-        currentSlideID--;
-         showSlide()
+    currentSlideID--;
+        showSlide()
     }
-       
+    else if(currentSlideID==1)
+    currentSlideID = totalSlides;
+    showSlide()
 }
 
 
@@ -57,6 +61,8 @@ function showSlide(){
             element.classList.add("hidden")
         }
     }
+    console.log(slides)
+    console.log(currentSlideID)
 }
 
 

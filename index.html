@@ -8,6 +8,7 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <!--Popup-->
@@ -81,15 +82,15 @@
     <!--Slide Image Section-->
 
     <section>
-      <div class="p-10 relative">
+      <div class="p-5 relative">
         <div id="slider" class="flex">
-          <img class="w-full h-96" src="./Images/img3.jpg" alt="" />
-          <img class="w-full h-96" src="./Images/img2.jpg" alt="" />
+          <img class="w-full h-96" src="./Images/img1.jpg" alt="" />
+          <img class="w-full h-96 hidden" src="./Images/img2.jpg" alt="" />
           <img class="w-full h-96 hidden" src="./Images/img3.jpg" alt="" />
           <img class="w-full h-96 hidden" src="./Images/img4.jpg" alt="" />
         </div>
 
-        <div class="absolute flex top-0 left-0 w-full h-full p-20">
+        <div class="absolute flex top-0 left-0 w-50% h-full p-20 md:w-full ">
           <div class="my-auto w-full flex justify-between md:flex">
             <button onclick="prev()">
               <svg
@@ -99,7 +100,6 @@
                 stroke-width="1.5"
                 stroke="currentColor"
                 class="w-10 h-10 text-white md:w-28 h-28"
-                onclick="prev()"
               >
                 <path
                   stroke-linecap="round"
@@ -109,14 +109,17 @@
               </svg>
             </button>
 
-            <div>
+            <div class="grid gap-5">
               <div class="flex justify-center">
-                <h1 class="text-6xl font-bold text-white">
-                  Let the Celebrations begin
-                </h1>
+                <h1 class="text-1xl font-bold text-white md:text-6xl">
+                  Level Up your style with our
+                </h1>  
+              </div>
+              <div class="flex justify-center text-1xl font-bold text-white md:text-3xl">
+                <h1>Summer Collections</h1>
               </div>
               <div class="flex justify-center">
-                <button class="border border-black bg-white p-3 rounded">Shop Now</button>
+                <button class="p-2 md:border border-black bg-white p-3 rounded">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
               </div>
             </div>
 
@@ -128,7 +131,6 @@
                 stroke-width="1.5"
                 stroke="currentColor"
                 class="w-10 h-10 text-white md:w-28 h-28"
-                onclick="next()"
               >
                 <path
                   stroke-linecap="round"
@@ -141,6 +143,57 @@
         </div>
       </div>
     </section>
+
+
+    <!--Brands-->
+    
+    <section>
+      <div class="p-5">
+        <h1 class="text-6xl md:text-3xl font-bold">Brands</h1>
+      </div>
+
+      <div class="flex justify-between items-center">
+        <div class="w-3 h-3 grid items-center">
+          <img src="./Images/behance.png" alt="">
+          <h1>Puma</h1>
+        </div>
+
+        <div class="w-3 h-3 grid items-center">
+          <img src="./Images/adidas.png" alt="">
+          <h1>Adidas</h1>
+        </div>
+
+        <div class="w-3 h-3 grid items-center">
+          <img src="./Images/simple.png" alt="">
+          <h1>Simple</h1>
+        </div>
+
+        <div class="w-3 h-3 grid items-center">
+          <img src="./Images/leaves.png" alt="">
+          <h1>Leaves</h1>
+        </div>
+
+        <div class="w-3 h-3 grid items-center">
+          <img src="./Images/behance (1).png" alt="">
+          <h1>Behance</h1>
+        </div>
+
+        <div class="w-3 h-3 grid items-center">
+          <img src="./Images/twitch.png" alt="">
+          <h1>Twitch</h1>
+        </div>
+
+        <div class="w-3 h-3 grid items-center">
+          <img src="./Images/leaves (1).png" alt="">
+          <h1>Leaves</h1>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
 
     <script src="index.js"></script>
   </body>
