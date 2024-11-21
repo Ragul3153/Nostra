@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections</title>
+     <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+<!--Popup-->
+
+    <section
+      id="main"
+      class="bg-black flex items-center justify-center gap-20 hidden md:flex"
+    >
+      <div class="flex gap-2 text-white p-2">
+        <h1>Sign Up and</h1>
+        <h1 class="font-bold">GET 20% OFF</h1>
+        <h1>for your first order</h1>
+      </div>
+
+      <div>
+        <h1 id="popup" class="text-white cursor-pointer">X</h1>
+      </div>
+    </section>
+
+<!--Navigation Nar-->
+
+    <section class="flex justify-between bg-gray-300 p-5 items-center sticky top-0">
+      <div>
+        <h1 class="font-bold text-2xl">Nostra</h1>
+      </div>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        id="menuicon"
+        class="w-8 h-8 md:hidden"
+        onclick="open"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+        />
+      </svg>
+
+      <div class="flex gap-10 hidden md:flex">
+        <p class="cursor-pointer">Home</p>
+        <p class="cursor-pointer">New Arrival</p>
+        <p class="cursor-pointer">Most Wanted</p>
+        <p class="cursor-pointer">Collections</p>
+        <p class="cursor-pointer">Contact Us</p>
+      </div>
+    </section>
+
+<!--Side Navbar-->
+
+    <section>
+      <div
+        id="sidenav"
+        class="bg-gray-200 fixed top-0 grid p-5 h-full transition-all duration-1000"
+        style="right: -50%"
+      >
+        <div>
+          <p id="closenav" class="text-right">X</p>
+        </div>
+        <p>Home</p>
+        <p>New Arrival</p>
+        <p>Most Wanted</p>
+        <p>Collections</p>
+        <p>Contact Us</p>
+      </div>
+    </section>
+
+<!--Collection Section-->
+
+    <section class="flex">
+        <div>
+        <div class="p-5">
+            <h1 class="font-bold">Occasion</h1>
+            <input type="checkbox"> Summer <br>
+            <input type="checkbox"> Party <br>
+            <input type="checkbox"> Beach
+        </div>
+
+         <div class="p-5">
+            <h1 class="font-bold">Colors</h1>
+            <input type="checkbox"> Red <br>
+            <input type="checkbox"> Blue <br>
+            <input type="checkbox"> White <br>
+            <input type="checkbox"> Green
+        </div>
+
+         <div class="p-5">
+            <h1 class="font-bold">Arrivals</h1>
+            <input type="checkbox"> New <br>
+            <input type="checkbox"> Old
+        </div>
+        </div>
+        
+        <div class="w-full">
+            <div class="flex justify-center p-5">
+                <input class="border border-8 border-black rounded-lg w-full h-10" type="text" placeholder="Search">
+            </div>
+
+            <div class="flex justify-between gap-2 px-5">
+                <div>
+                    <img class="w-28 h-24" src="./Images/Floral Summer Shirt.jpg" alt="">
+                    <p class="text-xs font-bold">Floral Summer Shirt</p>
+                    <p class="text-xs">₹220</p>
+                </div>
+
+                <div>
+                    <img class="w-28 h-24" src="./Images/Summer Green.jpg" alt="">
+                    <p class="text-xs font-bold">Summer Green</p>
+                    <p >₹220</p>
+                </div>
+
+                 <div>
+                    <img class="w-28 h-24" src="./Images/Party Floral Shirt.jpg" alt="">
+                    <p class="text-xs font-bold">Party Floral Shirt</p>
+                    <p>₹220</p>
+                </div>
+            </div>
+
+            <div class="flex justify-between gap-2 px-5">
+                <div>
+                    <img class="w-28 h-24" src="./Images/Floral Summer 1.jpg" alt="">
+                    <p class="text-xs font-bold">Floral Summer Shirt</p>
+                    <p class="text-xs">₹220</p>
+                </div>
+
+                <div>
+                    <img class="w-28 h-24" src="./Images/Beach Shirt.jpg" alt="">
+                    <p class="text-xs font-bold">Beach Shirt</p>
+                    <p class="text-xs">₹220</p>
+                </div>
+                
+                <div>
+                    <img class="w-28 h-24" src="./Images/Shirt Party Red.jpg" alt="">
+                    <p class="text-xs font-bold">Shirt Party Red</p>
+                    <p class="text-xs">₹220</p>
+                </div>
+            </div>
+
+             <div class="flex justify-between gap-2 px-5">
+                <div>
+                    <img class="w-28 h-24" src="./Images/Party Floral Shirt.jpg" alt="">
+                    <p class="text-xs font-bold">Floral Summer Shirt</p>
+                    <p class="text-xs">₹220</p>
+                </div>
+
+                <div>
+                    <img class="w-28 h-24" src="./Images/Shirt Party Red.jpg" alt="">
+                    <p class="text-xs font-bold">Beach Shirt</p>
+                    <p class="text-xs">₹220</p>
+                </div>
+                
+                <div>
+                    <img class="w-28 h-24" src="./Images/Floral Summer Shirt.jpg" alt="">
+                    <p class="text-xs font-bold">Shirt Party Red</p>
+                    <p class="text-xs">₹220</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--News Letter-->
+
+    <section class="grid justify-center gap-3 mt-5"> 
+      <div>
+        <h1 class="text-center font-bold text-lg">Join our News Letter</h1>
+        <p class="text-xs px-5 flex text-center">Signup for email newspaper to get exclusive discounts, updates, and more</p>
+      </div>
+
+      <div class="flex justify-center">
+        <input class="border border-8 border-black" type="text">
+      </div>
+
+      <div class="flex justify-center">
+        <button class="border border-black bg-gray-900 p-2 rounded-xl text-white">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </section>
+
+<!--Footer Section-->
+    <section class="bg-gray-900 p-10 grid gap-5 mt-10">
+      <div>
+        <h1 class="text-white font-bold text-lg">Nostra</h1>
+        <p class="text-white text-xs">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those intrest</p>
+      </div>
+
+      <div class="flex gap-5">
+        <i class="fa-brands fa-instagram" style="color: white;"></i>
+        <i class="fa-brands fa-twitter" style="color: white;"></i>
+        <i class="fa-brands fa-facebook" style="color: white;"></i>
+      </div>
+
+      <div>
+        <p class="text-white text-xs">@2024 Nostra.com</p>
+      </div>
+    </section>
+
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
