@@ -10,6 +10,13 @@
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
+
+  <style>
+    .scrollbar-hide::-webkit-scrollbar{
+      display: none;
+    }
+  </style>
+
   <body>
     <!--Popup-->
     <section
@@ -29,7 +36,7 @@
 
     <!--Navigation Bar-->
 
-    <section class="flex justify-between bg-gray-300 px-5 items-center sticky top-0">
+    <section class="flex justify-between bg-gray-300 p-5 items-center sticky top-0 z-20">
       <div>
         <h1 class="font-bold text-2xl">Nostra</h1>
       </div>
@@ -289,39 +296,95 @@
         <h1 class="text-3xl font-bold">Most Wanted</h1>
       </div>
 
-      <div class="flex justify-between flex-wrap mt-5"> 
+      <div class="flex justify-between mt-5 overflow-x-scroll gap-8 scrollbar-hide"> 
         
         <div class="relative">
-          <img class="w-40 h-40  md:w-72 md:h-72" src="./Images/Floral Summer Shirt.jpg" alt="">
+          <img class="w-40 h-40 max-w-none md:w-72 md:h-72" src="./Images/Floral Summer Shirt.jpg" alt="">
           <p class="absolute border text-center px-3 rounded-md text-3xl bg-red-600 top-0 text-white">sale</p>
-          <div class="absolute text-5xl bottom-5 left-56">
+          <div class="absolute text-3xl bottom-5 right-1 md:text-5xl">
             <i class="fa-regular fa-heart"></i>
           </div>
         </div>
 
         <div class="relative">
-          <img class="w-40 h-40 md:w-72 md:h-72" src="./Images/pant.jpg" alt="">
+          <img class="w-40 h-40 max-w-none md:w-72 md:h-72" src="./Images/pant.jpg" alt="">
           <p class="absolute border text-center px-3 rounded-md text-3xl bg-red-600 top-0 text-white">sale</p>
-          <div class="absolute text-5xl bottom-5 left-56">
+          <div class="absolute text-3xl bottom-5 right-1 md:text-5xl">
             <i class="fa-regular fa-heart"></i>
           </div>
         </div>
   
          <div class="relative">
-          <img class="w-40 h-40 md:w-72 md:h-72" src="./Images/white shirt.jpg" alt="">
+          <img class="w-40 h-40 max-w-none md:w-72 md:h-72" src="./Images/white shirt.jpg" alt="">
           <p class="absolute border text-center px-3 rounded-md text-3xl bg-red-600 top-0 text-white">sale</p>
-          <div class="absolute text-5xl bottom-5 left-56">
+          <div class="absolute text-3xl bottom-5 right-1 md:text-5xl">
             <i class="fa-regular fa-heart"></i>
           </div>
         </div>
 
         <div class="relative">
-          <img class="w-40 h-40 md:w-72 md:h-72" src="./Images/Brown shirt.jpg" alt="">
+          <img class="w-40 h-40 max-w-none md:w-72 md:h-72" src="./Images/Brown shirt.jpg" alt="">
           <p class="absolute border text-center px-3 rounded-md text-3xl bg-red-600 top-0 text-white">sale</p>
-          <div class="absolute text-5xl bottom-5 left-56">
+          <div class="absolute text-3xl bottom-5 right-1 md:text-5xl">
             <i class="fa-regular fa-heart"></i>
           </div>
         </div>
+
+        <div class="relative">
+          <img class="w-40 h-40 max-w-none md:w-72 md:h-72" src="./Images/Floral Summer Shirt.jpg" alt="">
+          <p class="absolute border text-center px-3 rounded-md text-3xl bg-red-600 top-0 text-white">sale</p>
+          <div class="absolute text-3xl bottom-5 right-1 md:text-5xl">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </div>
+
+        <div class="relative">
+          <img class="w-40 h-40 max-w-none md:w-72 md:h-72" src="./Images/Floral Summer Shirt.jpg" alt="">
+          <p class="absolute border text-center px-3 rounded-md text-3xl bg-red-600 top-0 text-white">sale</p>
+          <div class="absolute text-3xl bottom-5 right-1 md:text-5xl">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </div>
+
+        <div class="relative">
+          <img class="w-40 h-40 max-w-none md:w-72 md:h-72" src="./Images/Floral Summer Shirt.jpg" alt="">
+          <p class="absolute border text-center px-3 rounded-md text-3xl bg-red-600 top-0 text-white">sale</p>
+          <div class="absolute text-3xl bottom-5 right-1 md:text-5xl">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </div>
+
+        <div class="relative">
+          <img class="w-40 h-40 max-w-none md:w-72 md:h-72" src="./Images/Floral Summer Shirt.jpg" alt="">
+          <p class="absolute border text-center px-3 rounded-md text-3xl bg-red-600 top-0 text-white">sale</p>
+          <div class="absolute text-3xl bottom-5 right-1 md:text-5xl">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </div>
+
+        <div class="relative">
+          <img class="w-40 h-40 max-w-none md:w-72 md:h-72" src="./Images/Floral Summer Shirt.jpg" alt="">
+          <p class="absolute border text-center px-3 rounded-md text-3xl bg-red-600 top-0 text-white">sale</p>
+          <div class="absolute text-3xl bottom-5 right-1 md:text-5xl">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </div>
+
+        <div class="relative">
+          <img class="w-40 h-40 max-w-none md:w-72 md:h-72" src="./Images/Floral Summer Shirt.jpg" alt="">
+          <p class="absolute border text-center px-3 rounded-md text-3xl bg-red-600 top-0 text-white">sale</p>
+          <div class="absolute text-3xl bottom-5 right-1 md:text-5xl">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </div>
+
+        <div class="relative">
+          <img class="w-40 h-40 max-w-none md:w-72 md:h-72" src="./Images/Floral Summer Shirt.jpg" alt="">
+          <p class="absolute border text-center px-3 rounded-md text-3xl bg-red-600 top-0 text-white">sale</p>
+          <div class="absolute text-3xl bottom-5 right-1 md:text-5xl">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </div>  
     
        
       </div>
