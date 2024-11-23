@@ -24,8 +24,8 @@ closenav.addEventListener("click", function () {
 
 currentSlideID = 1;
 
-sliderElement = document.getElementById("slider");
-totalSlides = sliderElement.childElementCount;
+sliderElement = document.querySelectorAll("#slider img");
+totalSlides = sliderElement?.length;
 console.log(totalSlides)
 
 function next(){
@@ -64,6 +64,112 @@ function showSlide(){
     console.log(slides)
     console.log(currentSlideID)
 }
+
+
+// Initialize variables
+var filterList = [];
+var tags = document.querySelectorAll(".tag"); // Select all checkboxes with the class "tag"
+console.log(tags);
+
+// Add event listeners for all tag checkboxes //
+tags.forEach((tag) => {
+  tag.addEventListener("change", (e) => {
+    console.log(e.target);
+
+    if (e.target.checked) {
+      // If the checkbox is checked, add its value to the filterList
+      filterList.push(e.target.value);
+    } else {
+      // If unchecked, remove its value from the filterList
+      filterList = filterList.filter((item) => item !== e.target.value);
+    }
+    console.log(filterList);
+
+    update(); // Call the update function to filter products
+  });
+});
+
+// Function to filter products based on selected tags
+function update() {
+  var productList = document.querySelectorAll(".product"); // Select all products
+  console.log(productList);
+
+  productList.forEach((product) => {
+    var check = false;
+
+    // Get tags for the current product
+    var temp = product.querySelector(".tags").innerHTML;
+
+    // Convert the tags string into an array
+    const tempFilterArray = temp.split(",");
+    console.log(tempFilterArray);
+
+    // Check if any filter tag matches the product tags
+    filterList.forEach((filterTag) => {
+      if (tempFilterArray.includes(filterTag)) {
+        check = true;
+        console.log(filterTag, check);
+      }
+    });
+
+    // Show or hide the product based on the match
+    if (!check && filterList.length > 0) {
+      product.style.display = "none";
+    } else {
+      product.style.display = "block";
+    }
+  });
+}   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

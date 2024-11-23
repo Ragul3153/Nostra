@@ -12,8 +12,9 @@
 </head>
 <body>
     
-    <!--Navigation Bar-->
-   <section class="flex justify-between bg-gray-300 p-5 items-center sticky top-0">
+   <!--Navigation Bar-->
+
+    <section class="flex justify-between bg-gray-300 p-5 items-center sticky top-0 z-20">
       <div>
         <h1 class="font-bold text-2xl">Nostra</h1>
       </div>
@@ -36,11 +37,30 @@
       </svg>
 
       <div class="flex gap-10 hidden md:flex">
-        <p class="cursor-pointer"><a href="index.html">Home</a></p>
-        <p class="cursor-pointer">New Arrival</p>
-        <p class="cursor-pointer">Most Wanted</p>
+        <p class="cursor-pointer">Home</p>
+        <p class="cursor-pointer"><a href="#newarrivals">New Arrival</a></p>
+        <p class="cursor-pointer"><a href="#mostwanted">Most Wanted</a></p>
         <p class="cursor-pointer"><a href="collections.html">Collections</a></p>
-        <p class="cursor-pointer">Contact Us</p>
+        <p class="cursor-pointer"><a href="Contact.html">Contact Us</a></p>
+      </div>
+    </section>
+
+    <!--Side Navbar-->
+
+    <section>
+      <div
+        id="sidenav"
+        class="bg-gray-200 fixed top-0 grid p-5 h-full transition-all duration-1000 z-20"
+        style="right: -50%"
+      >
+        <div>
+          <p id="closenav" class="text-right">X</p>
+        </div>
+        <p>Home</p>
+        <p>New Arrival</p>
+        <p>Most Wanted</p>
+        <p>Collections</p>
+        <p>Contact Us</p>
       </div>
     </section>
 
@@ -81,39 +101,39 @@
 
     <!--News Letter-->
 
-    <section class="grid justify-center gap-3 mt-5"> 
-      <div>
-        <h1 class="text-center font-bold text-lg">Join our News Letter</h1>
-        <p class="text-xs px-5 flex text-center">Signup for email newspaper to get exclusive discounts, updates, and more</p>
+    <section class="grid justify-center text-center gap-3 mt-5 md:mt-5"> 
+      <div class="md: grid gap-2">
+        <h1 class="text-center font-bold text-lg md:text-4xl">Join our News Letter</h1>
+        <p class="text-xs px-5 flex text-center md:text-3xl">Signup for email newspaper to get exclusive discounts, updates, and more</p>
       </div>
 
       <div class="flex justify-center">
-        <input class="border border-8 border-black" type="text">
+        <input class="border border-8 border-gray-900 md:w-11/12 p-2 border-gray-900" type="text">
       </div>
 
       <div class="flex justify-center">
-        <button class="border border-black bg-gray-900 p-2 rounded-xl text-white">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+        <button class="border border-black bg-gray-900 p-2 rounded-xl text-white text-xs">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
       </div>
     </section>
 
     <!--Footer Section-->
-    <section class="bg-gray-900 p-10 grid gap-5 mt-10">
-      <div>
-        <h1 class="text-white font-bold text-lg">Nostra</h1>
-        <p class="text-white text-xs">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those intrest</p>
+    <section class="bg-gray-900 p-10 grid gap-5 mt-10 md:grid gap-4">
+      <div class="md:grid gap-3">
+        <h1 class="text-white font-bold text-lg md:text-4xl">Nostra</h1>
+        <p class="text-white text-xs md:text-2xl">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those intrest</p>
       </div>
 
-      <div class="flex gap-5">
+      <div class="flex gap-5 md:text-3xl flex gap-10">
         <i class="fa-brands fa-instagram" style="color: white;"></i>
         <i class="fa-brands fa-twitter" style="color: white;"></i>
         <i class="fa-brands fa-facebook" style="color: white;"></i>
       </div>
 
       <div>
-        <p class="text-white text-xs">@2024 Nostra.com</p>
+        <p class="text-white text-xs md:text-2xl">@2024 Nostra.com</p>
       </div>
     </section>
 
-
+ <script src="index.js"></script>
 </body>
 </html>

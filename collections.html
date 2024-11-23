@@ -67,7 +67,7 @@
     <section>
       <div
         id="sidenav"
-        class="bg-gray-200 fixed top-0 grid p-5 h-full transition-all duration-1000"
+        class="bg-gray-200 fixed top-0 grid p-5 h-full transition-all duration-1000 z-20"
         style="right: -50%"
       >
         <div>
@@ -87,23 +87,23 @@
         <div class="md:w-3/12">
         <div class="p-5 md:text-3xl ">
             <h1 class="font-bold md:text-3xl">Occasion</h1>
-            <input type="checkbox"> Summer <br>
-            <input type="checkbox"> Party <br>
-            <input type="checkbox"> Beach
+            <input class="tag" value="summer" type="checkbox"> Summer <br>
+            <input class="tag" value="party" type="checkbox"> Party <br>
+            <input class="tag" value="beach" type="checkbox"> Beach
         </div>
 
          <div class="p-5 md:text-3xl">
             <h1 class="font-bold">Colors</h1>
-            <input type="checkbox"> Red <br>
-            <input type="checkbox"> Blue <br>
-            <input type="checkbox"> White <br>
-            <input type="checkbox"> Green
+            <input class="tag" value="red" type="checkbox"> Red <br>
+            <input class="tag" value="blue" type="checkbox"> Blue <br>
+            <input class="tag" value="white" type="checkbox"> White <br>
+            <input class="tag" value="green" type="checkbox"> Green
         </div>
 
          <div class="p-5 md:text-3xl">
             <h1 class="font-bold">Arrivals</h1>
-            <input type="checkbox"> New <br>
-            <input type="checkbox"> Old
+            <input class="tag" value="new" type="checkbox"> New <br>
+            <input class="tag" value="old" type="checkbox"> Old
         </div>
         </div>
 
@@ -116,69 +116,69 @@
                 <input class="border border-8 border-black rounded-lg w-full h-10 px-5" type="text" placeholder="Search">
             </div>
 
-            <div class="flex justify-between flex-wrap gap-5 px-5 ">
-                  <div>
+            <div id="product-list" class="flex justify-between flex-wrap gap-5 px-5 ">
+                  <div class="product">
                     <img class="w-28 h-24 md:w-80 md:h-80" src="./Images/Floral Summer Shirt.jpg" alt="">
                     <p class="text-xs font-bold md:text-2xl">Floral Summer Shirt</p>
                     <p class="text-xs">₹220</p>
-                    <tags class="hidden">new,blue,summer</tags>
+                    <p class="hidden tags">new,blue,summer</p>
                   </div>
                     
-                  <div>
+                  <div class="product">
                     <img class="w-28 h-24 md:w-80 md:h-80" src="./Images/Summer Green.jpg" alt="">
                     <p class="text-xs font-bold md:text-2xl">Summer Green</p>
                     <p >₹220</p>
-                    <tags class="hidden">new,blue,summer</tags>
+                    <p class="hidden tags">new,blue,summer</p>
                   </div>
 
-                  <div>
+                  <div class="product">
                     <img class="w-28 h-24 md:w-80 md:h-80" src="./Images/Party Floral Shirt.jpg" alt="">
                     <p class="text-xs font-bold md:text-2xl">Party Floral Shirt</p>
                     <p>₹220</p>
-                    <tags class="hidden">new,blue,party</tags>
+                    <p class="hidden tags">new,blue,party</p>
                   </div>
                    
-                  <div>
+                  <div class="product">
                     <img class="w-28 h-24 md:w-80 md:h-80" src="./Images/Floral Summer 1.jpg" alt="">
                     <p class="text-xs font-bold md:text-2xl">Floral Summer Shirt</p>
                     <p class="text-xs">₹220</p>
-                    <tags class="hidden">new,blue,party</tags>
+                    <p class="hidden tags">new,blue,party</p>
                   </div>
 
-                 <div>
+                 <div class="product">
                     <img class="w-28 h-24 md:w-80 md:h-80" src="./Images/Beach Shirt.jpg" alt="">
                     <p class="text-xs font-bold md:text-2xl">Beach Shirt</p>
                     <p class="text-xs">₹220</p>
-                    <tags class="hidden">new,blue,red</tags>
+                    <p class="hidden tags">new,blue,red</p>
                  </div>
                     
-                <div>
+                <div class="product">
                     <img class="w-28 h-24 md:w-80 md:h-80" src="./Images/Shirt Party Red.jpg" alt="">
                     <p class="text-xs font-bold md:text-2xl">Shirt Party Red</p>
                     <p class="text-xs">₹220</p>
-                    <tags class="hidden">new,blue,beach</tags>
+                    <p class="hidden tags">new,blue,beach</p>
                 </div>
           
-                <div>
+                <div class="product">
                     <img class="w-28 h-24 md:w-80 md:h-80" src="./Images/Party Floral Shirt.jpg" alt="">
                     <p class="text-xs font-bold md:text-2xl">Floral Summer Shirt</p>
                     <p class="text-xs">₹220</p>
-                    <tags class="hidden">new,blue,green</tags>
+                    <p class="hidden tags">new,blue,green</p>
                 </div>
                    
-                <div>
+                <div class="product"> 
                     <img class="w-28 h-24 md:w-80 md:h-80" src="./Images/Shirt Party Red.jpg" alt="">
                     <p class="text-xs font-bold md:text-2xl">Beach Shirt</p>
                     <p class="text-xs">₹220</p>
-                    <tags class="hidden">new,blue,new</tags>
+                    <p class="hidden tags">new,blue,new</p>
                 </div>
                     
                 
-                <div>
+                <div class="product">
                     <img class="w-28 h-24 md:w-80 md:h-80" src="./Images/Floral Summer Shirt.jpg" alt="">
                     <p class="text-xs font-bold md:text-2xl">Shirt Party Red</p>
                     <p class="text-xs">₹220</p>
-                    <tags class="hidden">new,blue,old</tags>
+                    <p class="hidden tags">new,blue,old</p>
                 </div>
 
                 </div>
