@@ -11,7 +11,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
+  
+  <!--Popup-->
+
+    <section
+      id="main"
+      class="bg-black flex items-center justify-center gap-20 hidden md:flex"
+    >
+      <div class="flex gap-2 text-white p-2">
+        <h1>Sign Up and</h1>
+        <h1 class="font-bold">GET 20% OFF</h1>
+        <h1>for your first order</h1>
+      </div>
+
+      <div>
+        <h1 id="popup" class="text-white cursor-pointer">X</h1>
+      </div>
+    </section>
+
+
+  
    <!--Navigation Bar-->
 
     <section class="flex justify-between bg-gray-300 p-5 items-center sticky top-0 z-20">
@@ -37,11 +56,11 @@
       </svg>
 
       <div class="flex gap-10 hidden md:flex">
-        <p class="cursor-pointer">Home</p>
+        <p class="cursor-pointer"><a href="index.html">Home</a></p>
         <p class="cursor-pointer"><a href="#newarrivals">New Arrival</a></p>
         <p class="cursor-pointer"><a href="#mostwanted">Most Wanted</a></p>
         <p class="cursor-pointer"><a href="collections.html">Collections</a></p>
-        <p class="cursor-pointer"><a href="Contact.html">Contact Us</a></p>
+        <p class="font-bold">Contact Us</p>
       </div>
     </section>
 
@@ -56,18 +75,18 @@
         <div>
           <p id="closenav" class="text-right">X</p>
         </div>
-        <p>Home</p>
+        <p><a href="index.html">Home</a></p>
         <p>New Arrival</p>
         <p>Most Wanted</p>
-        <p>Collections</p>
-        <p>Contact Us</p>
+        <p><a href="collections.html">Collections</a></p>
+        <p class="font-bold">Contact Us</p>
       </div>
     </section>
 
     <!--Contact Form-->
   
     <section class="flex justify-center md:px-60">
-      <div class="w-full p-5 bg-gray-900 text-white m-5 md:w-[800px]">
+      <div class="w-full p-5 bg-gray-900 text-white m-5 md:w-[800px] rounded-xl">
         <div>
           <h1 class="font-bold text-3xl">Contact Us</h1>
         </div>
@@ -91,7 +110,7 @@
         </div>
 
         <button
-          class="border border-black bg-blue-700 p-2 rounded-lg text-white mt-3"
+          class="border border-black bg-blue-700 p-2 rounded-lg text-white mt-5 hover:bg-red-900"
         >
           Submit
         </button>
@@ -112,7 +131,7 @@
       </div>
 
       <div class="flex justify-center">
-        <button class="border border-black bg-gray-900 p-2 rounded-xl text-white text-xs">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+        <button class="border border-black bg-gray-900 p-2 rounded-xl text-white hover:bg-red-900 md:text-2xl">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
       </div>
     </section>
 
@@ -120,7 +139,7 @@
     <section class="bg-gray-900 p-10 grid gap-5 mt-10 md:grid gap-4">
       <div class="md:grid gap-3">
         <h1 class="text-white font-bold text-lg md:text-4xl">Nostra</h1>
-        <p class="text-white text-xs md:text-2xl">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those intrest</p>
+        <p class="text-white text-xs md:text-2xl">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
       </div>
 
       <div class="flex gap-5 md:text-3xl flex gap-10">
