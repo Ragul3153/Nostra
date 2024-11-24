@@ -65,6 +65,23 @@ function showSlide(){
     console.log(currentSlideID)
 }
 
+// Like Button //
+
+
+const likeButtons = document.querySelectorAll(".like");
+
+likeButtons.forEach((like) => {
+  like.addEventListener("click", (e) => {
+    if (e.target.classList.contains("text-red-800")) {
+      e.target.classList.remove("text-red-800", "fa-solid");
+      e.target.classList.add("fa-regular");
+    } else {
+      e.target.classList.add("text-red-800", "fa-solid");
+      e.target.classList.remove("fa-regular");
+    }
+  });
+});
+
 
 // Initialize variables
 var filterList = [];
